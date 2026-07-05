@@ -1,0 +1,9 @@
+.header {
+    background-color: transparent;
+    padding: 1rem 0;
+
+    &__logo {
+        color: $color-primary-dark !important;
+        font-size: 1.5rem;
+    }
+}

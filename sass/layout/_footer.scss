@@ -1,0 +1,23 @@
+.footer {
+    h5 {
+        color: $color-primary-dark;
+        font-size: 1.25rem;
+    }
+
+    h6 {
+        color: $color-primary-dark;
+        font-weight: 700;
+        margin-bottom: 1rem;
+    }
+
+    ul {
+        li {
+            margin-bottom: 0.5rem;
+            
+            &:hover {
+                color: $color-primary;
+                cursor: pointer;
+            }
+        }
+    }
+}

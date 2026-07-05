@@ -1,0 +1,28 @@
+.btn {
+    border-radius: 50px;
+    padding: 0.5rem 1.5rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+
+    &--primary {
+        background-color: $color-primary;
+        color: $color-white;
+        border: none;
+
+        &:hover {
+            background-color: $color-primary-dark;
+            color: $color-white;
+        }
+    }
+
+    &--outline {
+        background-color: transparent;
+        color: $color-primary;
+        border: 2px solid $color-primary;
+
+        &:hover {
+            background-color: $color-primary;
+            color: $color-white;
+        }
+    }
+}

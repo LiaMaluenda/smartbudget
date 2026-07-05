@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartBudget - Gestión Financiera</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css\style.css">
+</head>
+<body>
+
+    <header class="header">
+        <nav class="navbar navbar-expand-lg navbar-light container">
+            <a class="navbar-brand header__logo" href="#">
+                <strong>SmartBudget</strong>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto header__nav">
+                    <li class="nav-item"><a class="nav-link" href="#features">Funciones</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#steps">Pasos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#pricing">Precios</a></li>
+                </ul>
+                <div class="header__actions d-flex align-items-center">
+                    <a href="#" class="btn btn-link text-dark text-decoration-none me-3">Inicia sesión</a>
+                    <a href="#" class="btn btn--primary">Empezar gratis</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero container py-5">
+            <div class="row align-items-center">
+                <div class="col-lg-6 hero__content">
+                    <h1 class="hero__title mb-4">Saber a dónde va tu plata cambia todo.</h1>
+                    <p class="hero__text mb-4">Descubre la herramienta definitiva para administrar tus finanzas personales y alcanzar tus metas financieras.</p>
+                    <div class="hero__cta mb-4">
+                        <button class="btn btn--primary me-3">Empezar gratis</button>
+                        <button class="btn btn--outline">Ver cómo funciona</button>
+                    </div>
+                    <p class="hero__social-proof small text-muted">
+                        <strong>10.000+ personas</strong> ya nos eligieron
+                    </p>
+                </div>
+                <div class="col-lg-6 hero__image-wrapper mt-5 mt-lg-0">
+                    <div class="card shadow-sm border-0 p-4 rounded-3">
+                        <h3 class="text-muted" style="font-size: 1rem;">Balance Total</h3>
+                        <h2 class="display-4 fw-bold">$4.832.500</h2>
+                        <div class="mt-4 d-flex justify-content-between">
+                            <div class="p-3 bg-light rounded w-45">Ingresos: $6.200.000</div>
+                            <div class="p-3 bg-light rounded w-45">Gastos: $1.367.500</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="features" class="features bg-light py-5">
+            <div class="container">
+                <h2 class="section-title mb-5">Todo lo que necesitas,<br>nada de lo que no.</h2>
+                <div class="features__grid">
+                    <div class="card feature-card border-0 shadow-sm p-4">
+                        <h4 class="feature-card__title">Visibilidad en tiempo real</h4>
+                        <p class="feature-card__text text-muted">Tus finanzas ordenadas en un solo lugar, al instante.</p>
+                    </div>
+                    <div class="card feature-card border-0 shadow-sm p-4">
+                        <h4 class="feature-card__title">Presupuestos inteligentes</h4>
+                        <p class="feature-card__text text-muted">Crea límites para no gastar de más sin darte cuenta.</p>
+                    </div>
+                    <div class="card feature-card border-0 shadow-sm p-4">
+                        <h4 class="feature-card__title">Metas de ahorro</h4>
+                        <p class="feature-card__text text-muted">Define un objetivo para el futuro y SmartBudget te ayuda.</p>
+                    </div>
+                    <div class="card feature-card border-0 shadow-sm p-4">
+                        <h4 class="feature-card__title">Seguridad bancaria</h4>
+                        <p class="feature-card__text text-muted">Cifrado AES-256. Tus datos son tuyos y de nadie más.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="steps" class="steps container py-5">
+            <h2 class="section-title mb-5">Tres pasos y listo.</h2>
+            <div class="row mb-5">
+                <div class="col-md-4 mb-4">
+                    <span class="text-muted">01</span>
+                    <h5 class="mt-2">Crea tu cuenta</h5>
+                    <p class="text-muted">Minutos online y ya estás dentro del sistema.</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <span class="text-muted">02</span>
+                    <h5 class="mt-2">Sincroniza tus bancos</h5>
+                    <p class="text-muted">Integra tus cuentas para un seguimiento automático.</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <span class="text-muted">03</span>
+                    <h5 class="mt-2">Toma el control</h5>
+                    <p class="text-muted">Ve la forma en que gastas y empieza a ahorrar.</p>
+                </div>
+            </div>
+            <div class="steps__banner rounded-3 text-center text-white d-flex align-items-center justify-content-center">
+                <h3 class="fw-light">El dinero no tiene que<br>ser una fuente de estrés.</h3>
+            </div>
+        </section>
+
+        <section id="pricing" class="pricing container py-5">
+            <h2 class="section-title text-center mb-5">Simple y sin sorpresas.</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card pricing-card border-0 shadow-sm p-4 h-100 d-flex flex-column">
+                        <h5 class="text-muted">Gratis</h5>
+                        <p>Para administrar lo básico.</p>
+                        <button class="btn btn--outline mt-auto w-100">Empezar gratis</button>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card pricing-card pricing-card--highlighted border-0 shadow p-4 h-100 text-white d-flex flex-column">
+                        <h5>Pro</h5>
+                        <h2 class="my-3">$4.990 <small>/mes</small></h2>
+                        <p>Para quienes quieren ir un paso más allá.</p>
+                        <ul class="list-unstyled mb-4">
+                            <li>✓ Cuentas ilimitadas</li>
+                            <li>✓ Metas de ahorro avanzadas</li>
+                        </ul>
+                        <button class="btn btn-light mt-auto w-100 text-purple fw-bold">Empezar con Pro</button>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card pricing-card border-0 shadow-sm p-4 h-100 d-flex flex-column">
+                        <h5 class="text-muted">Premium</h5>
+                        <h2 class="my-3">$7.990 <small>/mes</small></h2>
+                        <p>Para inversionistas y familias.</p>
+                        <button class="btn btn--outline mt-auto w-100">Contactar a ventas</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta text-center py-5 text-white">
+            <div class="container py-4">
+                <h2 class="mb-4">Empieza hoy. Tu yo del<br>futuro te lo va a agradecer.</h2>
+                <button class="btn btn-light btn-lg text-purple fw-bold">Empezar gratis</button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer bg-white py-5 border-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 mb-4">
+                    <h5 class="fw-bold">SmartBudget</h5>
+                    <p class="text-muted small">Software para gestionar tus finanzas con impacto.</p>
+                </div>
+                <div class="col-md-3 mb-2">
+                    <h6>Producto</h6>
+                    <ul class="list-unstyled text-muted small">
+                        <li>Funciones</li>
+                        <li>Precios</li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-2">
+                    <h6>Empresa</h6>
+                    <ul class="list-unstyled text-muted small">
+                        <li>Sobre nosotros</li>
+                        <li>Blog</li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-2">
+                    <h6>Legal</h6>
+                    <ul class="list-unstyled text-muted small">
+                        <li>Términos</li>
+                        <li>Privacidad</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js\script.js"></script>
+</body>
+</html>

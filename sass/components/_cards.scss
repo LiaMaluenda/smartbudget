@@ -1,0 +1,25 @@
+.feature-card {
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+    height: 100%;
+
+    &:hover {
+        transform: translateY(-5px);
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 1.25rem;
+        margin-bottom: 0.5rem;
+    }
+}
+
+.pricing-card {
+    border-radius: 16px;
+    
+    &--highlighted {
+        background-color: $color-primary;
+        color: $color-white;
+        transform: scale(1.05); 
+    }
+}

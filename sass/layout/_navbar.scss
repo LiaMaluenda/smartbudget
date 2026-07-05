@@ -1,0 +1,22 @@
+.navbar {
+    padding: 0.5rem 0;
+}
+
+.header {
+    &__nav {
+        .nav-link {
+            color: $color-text !important;
+            font-weight: 500;
+            padding: 0.5rem 1rem !important;
+
+            &:hover {
+                color: $color-primary !important;
+            }
+        }
+    }
+
+    &__actions {
+        display: flex;
+        align-items: center;
+    }
+}
