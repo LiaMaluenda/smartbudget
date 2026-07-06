@@ -3,9 +3,9 @@
 }
 
 body {
-  font-family: Roboto, sans-serif;
+  font-family: "Roboto Serif", sans-serif;
   color: #2d3436;
-  background-color: #f8f9fc;
+  background-color: #F6F0FA;
   line-height: 1.6;
 }
 
@@ -17,6 +17,10 @@ body {
 
 .text-purple {
   color: #5f27cd !important;
+}
+
+.w-45 {
+  width: 45%;
 }
 
 .header {
@@ -112,7 +116,7 @@ body {
 
 .hero__title {
   font-size: 3.5rem;
-  font-weight: 800;
+  font-weight: 300;
   color: #341f97;
   line-height: 1.1;
 }

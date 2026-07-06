@@ -13,7 +13,33 @@
         margin-bottom: 0.5rem;
     }
 }
+.testimonial-card {
+    border-radius: 12px;
+    transition: transform 0.3s ease;
 
+    &:hover {
+        transform: translateY(-5px);
+    }
+
+    &__stars {
+        font-size: 1.2rem;
+        letter-spacing: 2px;
+    }
+
+    &__quote {
+        color: $color-text;
+        font-size: 1rem;
+        line-height: 1.7;
+        font-weight: 400;
+    }
+}
+
+.dashboard-card {
+    background-color: $color-white;
+    border-radius: 16px;
+    box-shadow: 0 4px 15px color-text-muted; 
+    border: 1px solid color-text-muted; 
+}
 .pricing-card {
     border-radius: 16px;
     
@@ -23,3 +49,4 @@
         transform: scale(1.05); 
     }
 }
+

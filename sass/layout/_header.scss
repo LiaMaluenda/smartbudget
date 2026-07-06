@@ -1,9 +1,25 @@
 .header {
     background-color: transparent;
     padding: 1rem 0;
+    border-bottom: 1px solid #dee2e6;
 
     &__logo {
-        color: $color-primary-dark !important;
-        font-size: 1.5rem;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    &__logo-icon {
+        background-color: $color-primary; 
+        color: $color-white;
+        font-size: 1rem;
+        font-weight: 900;
+        width: 38px;
+        height: 38px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 12px;
     }
 }
