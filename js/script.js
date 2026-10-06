@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     window.addEventListener('scroll', function() {
         if (window.scrollY > 50) {
-            navbar.style.backgroundColor = #ffffff;
+            navbar.style.backgroundColor = '#ffffff';
             navbar.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.1)';
             navbar.style.transition = 'all 0.3s ease';
         } else {
