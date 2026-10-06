@@ -1,11 +1,12 @@
 # SmartBudget - Landing Page
 
-Landing page **SmartBudget** correspondiente al tercer modulo del bootcamp. Es una aplicación financiera diseñada para conectar cuentas, ordenar gastos y gestionar presupuestos. Este proyecto es la traducción a código frontend de un prototipo de alta fidelidad, que tiene el fin de evidenciar el uso de SASS, SCSS y la metodología escogida BEM.
+Landing page **SmartBudget**, correspondiente al tercer módulo del bootcamp. Presenta una aplicación financiera para conectar cuentas, ordenar gastos y gestionar presupuestos. El proyecto traduce a código frontend un prototipo de alta fidelidad hecho en Figma, con el fin de evidenciar el uso de SASS (SCSS) y la metodología BEM.
 
 ---
 
 ## 🔗 Enlaces del Proyecto
 
+* **Demo:** [liamaluenda.github.io/smartbudget](https://liamaluenda.github.io/smartbudget/)
 * **Repositorio GitHub:** [LiaMaluenda/smartbudget](https://github.com/LiaMaluenda/smartbudget)
 * **Prototipo UI/UX:** [Diseño en Figma](https://www.figma.com/make/uYG1DdwcnHWY8ED54jqODP/SmartBudget-landing-page-prototype?code-node-id=0-9&p=f&t=GEe2DFuU2p2JcR6l-0&fullscreen=1)
 
@@ -13,36 +14,54 @@ Landing page **SmartBudget** correspondiente al tercer modulo del bootcamp. Es u
 
 ## 🛠️ Tecnologías Utilizadas
 
-* **Estructura:** HTML5 Semántico.
-* **Estilos:** SASS (SCSS) y CSS3.
+* **Estructura:** HTML5 semántico.
+* **Estilos:** SASS (SCSS) compilado a CSS3.
 * **Interactividad:** JavaScript.
-* **Framework CSS:** Bootstrap 5 (Grilla y utilidades, modificado con variables SASS personalizadas).
+* **Framework CSS:** Bootstrap 5 desde CDN (grilla y clases utilitarias), combinado con estilos propios escritos en SASS.
 
 ---
 
 ## 📐 Metodologías y Arquitectura
 
-El proyecto está construido bajo estrictas normas de escalabilidad, manteniendo una separación total entre la estructura visual y la lógica interactiva.
+El proyecto separa la estructura (HTML), los estilos (SASS) y la lógica de interacción (JavaScript) en archivos distintos.
 
 ### SASS / CSS
-Se utilizó la **Metodología BEM** (Block, Element, Modifier) junto con el patrón de **Arquitectura 7-1** de SASS para organizar los estilos.
-* **`abstracts/`**: Variables de diseño (paleta de colores principales, tipografía *Roboto Serif*).
-* **`components/`**: Tarjetas modulares reutilizables (`.feature-card`, `.dashboard-card`, `.testimonial-card`).
-* **`layout/`**: Elementos estructurales globales (`_header.scss`, `_navbar.scss`).
-* **`pages/`**: Estilos específicos por vista (`_home.scss`).
+Se utilizó la **metodología BEM** (Block, Element, Modifier) junto con el patrón de **arquitectura 7-1** de SASS para organizar los estilos.
+
+* **`abstracts/`**: variables de diseño propias (paleta de colores y tipografía *Roboto Serif*).
+* **`base/`**: estilos generales de la página.
+* **`components/`**: botones y tarjetas reutilizables (`.feature-card`, `.dashboard-card`, `.testimonial-card`).
+* **`layout/`**: elementos estructurales (`_header.scss`, `_navbar.scss`, `_footer.scss`).
+* **`pages/`**: estilos específicos de la vista principal (`_home.scss`).
+* **`themes/`** y **`vendors/`**: carpetas reservadas de la estructura 7-1, aún sin estilos (Bootstrap se carga desde CDN).
+
+Todo se importa en `sass/main.scss`, que se compila a `css/style.css`.
 
 ### JavaScript
-Toda la lógica de interacción se encuentra encapsulada en archivos independientes, garantizando la limpieza del HTML. Las funcionalidades incluyen:
-* Scroll suave para anclas de navegación (Smooth Scroll).
-* Transiciones dinámicas en la barra de navegación basadas en el evento de *scroll* de la ventana.
-* Animaciones en cascada y manipulación del DOM para el mockup del dashboard financiero.
+La lógica de interacción está en `js/script.js`:
+
+* Scroll suave para los enlaces de navegación internos.
+* Cambio de fondo y sombra de la barra de navegación al hacer *scroll*.
+* Validación del gráfico de barras del dashboard: revisa que cada barra tenga altura y avisa en la consola si falta alguna.
 
 ---
 
 ## ⚙️ Instalación y Ejecución Local
 
-Para visualizar el proyecto y compilar los estilos correctamente en tu entorno local:
-
-1. Clona este repositorio en tu máquina local:
+1. Clona este repositorio:
    ```bash
-   git clone [https://github.com/LiaMaluenda/smartbudget.git](https://github.com/LiaMaluenda/smartbudget.git)
+   git clone https://github.com/LiaMaluenda/smartbudget.git
+   cd smartbudget
+   ```
+2. Si modificas los estilos, compila SASS a CSS. Con la extensión **Live Sass Compiler** de VS Code, o con la terminal:
+   ```bash
+   npm install -g sass
+   sass sass/main.scss css/style.css
+   ```
+3. Abre `index.html` en el navegador o con la extensión **Live Server** de VS Code.
+
+---
+
+## 👩‍💻 Autora
+
+**Lia Maluenda** · [GitHub](https://github.com/LiaMaluenda) · [Portafolio](https://liamaluenda.github.io/PortafolioDesarrolloWeb/)
